@@ -55,7 +55,12 @@ namespace MiniPhoneBook
                         }
                         Console.ReadKey();
                         break;
-                
+                    case < 0:
+                        Console.WriteLine("You can choice between 1 and 2");
+                        Console.ReadKey();
+                        break;
+
+
 
                     default:
 
@@ -70,10 +75,11 @@ namespace MiniPhoneBook
                 Console.WriteLine("3 Do you  Exit ?\t\t\n (y/n)\t\t\t");
                 Console.WriteLine("-----------------------------");
                 char exit = char.Parse(Console.ReadLine());
-                 
-              
+            
+                char ch = Console.ReadKey(true).KeyChar; //sprawdza czy zostal podnay char
+       
                 //Way out code
-                if (exit == 'y')
+                if (exit == 'y' && Char.IsDigit(ch))
                     {
                         end = false;
                
