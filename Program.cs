@@ -79,7 +79,7 @@ namespace MiniPhoneBook
               
        
                 //Way out code
-                if (exit == 'y' && Char.IsDigit(ch))
+                if (exit == 'y')
                     {
                         end = false;
                
