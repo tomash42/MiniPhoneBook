@@ -76,7 +76,7 @@ namespace MiniPhoneBook
                 Console.WriteLine("-----------------------------");
                 char exit = char.Parse(Console.ReadLine());
             
-                char ch = Console.ReadKey(true).KeyChar; //sprawdza czy zostal podnay char
+              
        
                 //Way out code
                 if (exit == 'y' && Char.IsDigit(ch))
